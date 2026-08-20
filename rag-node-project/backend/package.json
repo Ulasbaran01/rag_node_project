@@ -1,0 +1,22 @@
+{
+  "name": "local-rag-node-backend",
+  "version": "1.0.0",
+  "description": "Yerel, çevrimdışı RAG API'si — Foundry Local + Express + SQLite (TF-IDF).",
+  "type": "module",
+  "scripts": {
+    "ingest": "node src/ingest.js",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.6",
+    "express": "^4.21.0",
+    "foundry-local-sdk": "^0.9.0",
+    "multer": "^2.2.0",
+    "pdf-parse": "^2.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

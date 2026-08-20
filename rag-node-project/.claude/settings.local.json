@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/Users/azracebe/Downloads/LocalLLM-main.zip\")",
+      "Bash(mkdir -p \"/private/tmp/claude-501/-Users-azracebe-Desktop-rag-node/3cf8a69e-f8d9-4bb5-ab71-c90deb78d458/scratchpad/LocalLLM-main\")",
+      "Bash(unzip -q -o \"/Users/azracebe/Downloads/LocalLLM-main.zip\" -d \"LocalLLM-main\")",
+      "WebSearch",
+      "Bash(node --check src/chunker.js)",
+      "Bash(node --check src/vectorStore.js)",
+      "Bash(node --check src/config.js)",
+      "Bash(foundry --version)",
+      "Bash(foundry cache *)",
+      "Bash(node /private/tmp/claude-501/-Users-azracebe-Desktop-rag-node/3cf8a69e-f8d9-4bb5-ab71-c90deb78d458/scratchpad/test_retrieval.mjs)",
+      "Bash(node /private/tmp/claude-501/-Users-azracebe-Desktop-rag-node/3cf8a69e-f8d9-4bb5-ab71-c90deb78d458/scratchpad/test_retrieval.mjs 2>&1; rm -f /private/tmp/claude-501/-Users-azracebe-Desktop-rag-node/3cf8a69e-f8d9-4bb5-ab71-c90deb78d458/scratchpad/test.db*)",
+      "Bash(foundry model *)",
+      "Bash(xargs -I{} echo {})",
+      "Bash(node --check /Users/azracebe/Desktop/rag-node/backend/src/chatEngine.js)",
+      "Bash(curl -s -m 5 http://127.0.0.1:3000/api/health)",
+      "Bash(npm install *)",
+      "Bash(npm audit *)"
+    ]
+  }
+}
